@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 
 import openai
+from embedding import res
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -45,7 +46,8 @@ def conversation_loop(chat):
     return chat
 
 if __name__ == "__main__":
-    print(conversation_loop([]))
+  print(res.keys())
+  print(conversation_loop([]))
     
     
 '''
